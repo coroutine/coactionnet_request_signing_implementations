@@ -1,6 +1,6 @@
 # sign_request.rb
 
-This implementation requires Ruby
+This implementation requires Ruby 3.1.1
 
 ## Usage
 
