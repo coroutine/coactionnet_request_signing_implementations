@@ -6,6 +6,6 @@ This repo provides a collection of reference implementations of the CoactionNet 
 
 ## Implementations
 
-- [Javascript (NodeJS)]('./javascript/README.md')
-- [Ruby]('./ruby/README.md)
-- [Typescript (Deno)]('./typescript/README.md')
+- [Javascript (NodeJS)]('javascript/README.md')
+- [Ruby]('ruby/README.md)
+- [Typescript (Deno)]('typescript/README.md')
