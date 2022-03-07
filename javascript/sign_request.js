@@ -11,10 +11,10 @@ function bodyDigest(body) {
 
 exports.sign = function (method, path, body, timestamp, publicKey, privateKey) {
   const data = [method.toUpperCase(),
-  path.toLowerCase(),
-  bodyDigest(body),
-    timestamp,
-    publicKey].join('\n').trim();
+                path.toLowerCase(),
+                bodyDigest(body),
+                timestamp,
+                publicKey].join('\n').trim();
 
   return crypto
     .createHmac('sha256', privateKey)

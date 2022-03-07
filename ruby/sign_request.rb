@@ -11,7 +11,7 @@ module SignRequest
     raise ArgumentError, 'public_key is required'   if public_key.nil?
     raise ArgumentError, 'private_key is required'  if private_key.nil?
     
-    data = [ method.to_s.upcase,
+    data = [  method.to_s.upcase,
               path.to_s.downcase,
               body_digest(body),
               timestamp,

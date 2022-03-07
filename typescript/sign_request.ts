@@ -20,6 +20,7 @@ function bodyDigest(body: RequestBody): Digest {
   if(body === null) {
     return '';
   }
+
   const digest = new Md5();
   return digest.update(body).toString("base64");
 }
@@ -38,6 +39,7 @@ export async function hmac(message: string, privateKey: Key): Promise<Signature>
   
   const data    = encoder.encode(message);
   const result  = await crypto.subtle.sign("HMAC", key , data.buffer);
+  
   return encode(new Uint8Array(result));
 }
 
